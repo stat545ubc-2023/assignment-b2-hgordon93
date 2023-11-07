@@ -13,16 +13,21 @@
 #' * Columns are not modified; column "n" for observations is created.
 #' * Data frame attributes are preserved.
 #'
+#' @importFrom dplyr group_by
+#' @importFrom dplyr filter
+#' @importFrom dplyr summarise
+#' @importFrom dplyr n
+#' @importFrom dplyr pick
+#'
 #' @export
 #'
 #' @examples
-#' count_by_groups_filter_by_condition(df=vancouver_trees, c(neighbourhood_name, genus_name), cond= date_planted >"2000-01-01")
-#' count_by_groups_filter_by_condition(df=penguins, c(island, species))
-#' count_by_groups_filter_by_condition(df=penguins, cond=sex=="female")
+#' count_by_groups_filter_by_condition(df=palmerpenguins::penguins, c(island, species))
+#' count_by_groups_filter_by_condition(df=palmerpenguins::penguins, cond=sex=="female")
 #'
 count_by_groups_filter_by_condition <- function(df, groups, cond) {
-  df %>%
-    group_by(pick({{ groups }})) %>%
-    filter({{ cond }}) %>%
-    summarise(n=n())
+  df |>
+    dplyr::group_by(dplyr::pick({{ groups }})) |>
+    dplyr::filter({{ cond }}) |>
+    dplyr::summarise(n=dplyr::n())
 }

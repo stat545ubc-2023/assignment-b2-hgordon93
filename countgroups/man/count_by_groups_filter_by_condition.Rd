@@ -27,8 +27,7 @@ The output has the following properties:
 This is a function that summarises the number of observations for one or more variables within a data frame. It can be used to compute the number of  observations of one or more grouped variables, the number of observations that meet a specified condition, or a combination of the two. It uses functions from the tidyverse.
 }
 \examples{
-count_by_groups_filter_by_condition(df=vancouver_trees, c(neighbourhood_name, genus_name), cond= date_planted >"2000-01-01")
-count_by_groups_filter_by_condition(df=penguins, c(island, species))
-count_by_groups_filter_by_condition(df=penguins, cond=sex=="female")
+count_by_groups_filter_by_condition(df=palmerpenguins::penguins, c(island, species))
+count_by_groups_filter_by_condition(df=palmerpenguins::penguins, cond=sex=="female")
 
 }
