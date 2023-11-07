@@ -1,6 +1,7 @@
 Package: countgroups
 Title: Count Observations by Grouped Variables
-Version: 0.0.0.9000
+Version: 0.1.0
+Imports: dplyr, palmerpenguins
 Authors@R: 
     person("Heather", "Gordon", , "hgordon@eoas.ubc.ca", role = c("aut", "cre"),
            comment = c(ORCID = "YOUR-ORCID-ID"))
