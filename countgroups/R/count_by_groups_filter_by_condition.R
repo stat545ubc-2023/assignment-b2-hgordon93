@@ -1,4 +1,4 @@
-#' Count observations by groups and/or those which meet a condition
+#' Count Observations by Grouped Variables
 #'
 #' This is a function that summarises the number of observations for one or more variables within a data frame. It can be used to compute the number of  observations of one or more grouped variables, the number of observations that meet a specified condition, or a combination of the two. It uses functions from the tidyverse.
 #'

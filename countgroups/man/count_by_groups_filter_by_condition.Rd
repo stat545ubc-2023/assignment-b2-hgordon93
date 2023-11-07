@@ -2,7 +2,7 @@
 % Please edit documentation in R/count_by_groups_filter_by_condition.R
 \name{count_by_groups_filter_by_condition}
 \alias{count_by_groups_filter_by_condition}
-\title{Count observations by groups and/or those which meet a condition}
+\title{Count Observations by Grouped Variables}
 \usage{
 count_by_groups_filter_by_condition(df, groups, cond)
 }
