@@ -28,6 +28,7 @@ This is a function that summarises the number of observations for one or more va
 }
 \examples{
 count_by_groups_filter_by_condition(df=palmerpenguins::penguins, c(island, species))
+count_by_groups_filter_by_condition(df=palmerpenguins::penguins, island, cond=species=="Adelie")
 count_by_groups_filter_by_condition(df=palmerpenguins::penguins, cond=sex=="female")
 
 }

@@ -23,6 +23,7 @@
 #'
 #' @examples
 #' count_by_groups_filter_by_condition(df=palmerpenguins::penguins, c(island, species))
+#' count_by_groups_filter_by_condition(df=palmerpenguins::penguins, island, cond=species=="Adelie")
 #' count_by_groups_filter_by_condition(df=palmerpenguins::penguins, cond=sex=="female")
 #'
 count_by_groups_filter_by_condition <- function(df, groups, cond) {
