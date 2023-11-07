@@ -1,12 +1,11 @@
 Package: countgroups
-Title: What the Package Does (One Line, Title Case)
+Title: Count Observations by Grouped Variables
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
+    person("Heather", "Gordon", , "hgordon@eoas.ubc.ca", role = c("aut", "cre"),
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+Description: This package contains a function that summarises the number of observations for one or more variables within a data frame. It can be used to compute the number of  observations of one or more grouped variables, the number of observations that meet a specified condition, or a combination of the two.
+License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
